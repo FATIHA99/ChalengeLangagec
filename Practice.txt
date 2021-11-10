@@ -1,0 +1,47 @@
+-------------------------------------------------EXERCICE1--------------------------------------------------------
+#include <stdio.h>
+#include <stdlib.h>
+
+/* run this program using the console pauser or add your own getch, system("pause") or input loop */
+
+int main(int argc, char *argv[]) {
+	char nom[50];
+	char prenom[50];
+	char sexe[10];
+	int age;
+	int tele;
+	printf("entrer le nom \n");
+	scanf("%s",&nom);
+	printf("entrer le prenom \n");
+	scanf("%s",&prenom);
+	printf("entrer age : \n ");
+	scanf("%d",&age);
+	
+	printf("entrer le sexe: \n");
+	scanf("%s",&sexe);
+	printf("entrer le tele \n");
+	scanf("%s",&tele);
+	
+	printf("------- votre informtions ---------\n");
+	printf(" NOM: %s \n prenom: %s \n sexe: %s age:%d \n tele:%d  \n",nom,prenom,sexe,age,tele);
+		printf("--------------------------------\n");
+	return 0;
+}
+-------------------------------------------------EXERCICE2--------------------------------------------------------
+
+int F,C;
+printf("entrer la température en Fahrenheit \n ");
+scanf("%d",&F);
+//F = (C*1.8)+32 
+
+C=F-32/1.8;
+printf("la temperature en Celsius est : %d",C);
+-------------------------------------------------EXERCICE3--------------------------------------------------------
+float Metre=1,Mile=1,km=1;
+printf("entrer demande la distance en Metre \n");
+scanf("%f",&Metre);
+km=Metre*1000;
+Mile=km*1.609;
+ //Km = Mile/1.609
+ printf(" la distance en Mile est %.2f  \n",Mile);
+-------------------------------------------------EXERCICE4--------------------------------------------------------
