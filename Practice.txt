@@ -1,8 +1,5 @@
 -------------------------------------------------EXERCICE1--------------------------------------------------------
-#include <stdio.h>
-#include <stdlib.h>
 
-/* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
 int main(int argc, char *argv[]) {
 	char nom[50];
@@ -45,3 +42,113 @@ Mile=km*1.609;
  //Km = Mile/1.609
  printf(" la distance en Mile est %.2f  \n",Mile);
 -------------------------------------------------EXERCICE4--------------------------------------------------------
+float mile=0,metre=0,km=0;
+ printf("entrer demande la distance en mile \n");
+scanf("%f",&mile);
+km=mile/1.609;
+metre=km/1000;
+printf(" la distance en metre est %.2f  \n",metre);
+-------------------------------------------------EXERCICE5--------------------------------------------------------
+int F,c;
+printf("entrer la température en Fahrenheit \n ");
+scanf("%d \n",&F);
+c=F-32/1.8;
+printf("la temperature en Celsius est : %d",c);
+if(c<0)
+{
+	printf(" tres froid \n");
+	
+}
+else if (c>01 && c<20)
+{
+	printf("froid");
+}
+else if (c>20 && c<40)
+{
+	printf("chaud");
+}
+else{
+	printf("tres chaud ");
+}
+
+-------------------------------------------------------EXERCICE 6 ---------------------------------------------------
+int f,c;
+    printf("entrer la température en Fahrenheit \n ");
+    scanf("%d",&f);
+    c=(f-32)/1.8;
+    printf("la temperature en degré Celsius est %d",c);
+-------------------------------------------------------EXERCICE 7 ---------------------------------------------------
+    int a,b;
+printf("entrer la valeur de a  et b \n");
+scanf("%d %d",&a,&b);
+printf("la somme de a et b est %d \n",a+b);
+printf("la soustractio de a est b est %d \n",a-b);
+printf("le produit de a et b est %d \n",a*b);
+if (b!=0)
+{printf("la division de a et b est %d \n",a/b);
+printf("le rest de la division est :%d \n",a%b);
+}
+else
+{
+printf(" la valeur de b doit etre diffirent 0 \n");
+
+}
+ -------------------------------------------------------EXERCICE 8 ---------------------------------------------------
+ int nbr1,nbr2,nbr3,nbr4,somme;
+ float moyen;
+ printf("entrer les quatre valeur \n");
+ scanf("%d %d %d %d",&nbr1,&nbr2,&nbr3,&nbr4);
+  somme=nbr1+nbr2+nbr3+nbr4;
+  moyen=somme/4;
+  printf("la somme:  %d \n le moyen :%.2f \n",somme,moyen);
+  -------------------------------------------------------EXERCICE 9 ---------------------------------------------------
+#include <stdio.h>
+#include <stdlib.h>
+#include <math.h>
+
+int main()
+{float x1,y1,x2,y2,distance=0;
+ printf("entrer les coordonner de la premiers point (M) \n");
+ scanf("%f %f",&x1,&y1);
+  printf("entrer les coordonner de la deuxieme  point  (N)\n");
+ scanf("%f %f",&x2,&y2);
+
+ distance=sqrt(pow(x1-x2,2)+pow(y2-y1,2));
+ printf("la distance entre M(%f,%f) et N(%f,%f) est %f \n",x1,y1,x2,y2,distance);
+
+return 0;
+}
+  -------------------------------------------------------EXERCICE 10 ---------------------------------------------------
+  float rayon,c;
+const P=3.14;
+printf("entrer le rayon \n");
+scanf("%f",&rayon);
+c=2*P*rayon;
+printf("la circonférence  est :%.2f",c);
+  -------------------------------------------------------EXERCICE 11 ---------------------------------------------------
+float c, longueur ,largeur;
+printf("entrer longueur de rectangle :\n");
+scanf("%f",&longueur);
+printf("entrer largeur de rectangle :\n");
+scanf("%f",&largeur);
+ c=2*(longueur + largeur);
+ printf("la circonférence de rectangle  est : %.2f cm ",c);
+  -------------------------------------------------------EXERCICE 12 ---------------------------------------------------
+      int nbr=0;
+    printf("Entrez un nombre  de 3 chifres:\n ");
+    scanf("%d",&nbr);
+    int a=((nbr%100)%10) ;
+    int b=((nbr%100)/10);
+    int c=nbr/100;
+    printf("%d",a);
+    printf("%d",b);
+    printf("%d",c);
+     -------------------------------------------------------EXERCICE 13 ---------------------------------------------------
+  
+  
+  
+  
+  
+  
+  
+
