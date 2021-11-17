@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <ctype.h>
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
@@ -9,7 +10,8 @@ int main()
 	char cara;
 	printf("entrer un caractere \n");
 	scanf("%c", &cara);
-
+    cara = tolower(cara);
+     
 	switch (cara)
 	{
 	case 'a':

@@ -8,14 +8,14 @@ int main(int argc, char *argv[])
 {
 	float a, b, c, x1, x2, x, r;
 	printf("entrer la valeur de A \n");
-	scanf("%d", &a);
+	scanf("%f", &a);
     printf("entrer la valeur de B \n");
-	scanf("%d", &b);
+	scanf("%f", &b);
 	printf("entrer la valeur de C \n");
-	scanf("%d", &c);
+	scanf("%f", &c);
    //delta 
 	r = pow(b, 2) - 4 * a * c;
-	printf(" resultat  : %.f", r);
+	printf(" resultat  : %.f\n", r);
 	if (r < 0)
 	{
 		printf("pas de solution \n");
@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 	{
 		x1 = (-b - sqrt(r)) / (2 * a);
 		x2 = (-b + sqrt(r)) / (2 * a);
-		printf("x1:%d", x1);
+		printf("x1:%d \n", x1);
 		printf("x2:%d", x2);
 	}
 	else
